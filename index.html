@@ -21,12 +21,18 @@
 		#short-white
 		{
 			background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
-			height: 80px;
+			height: 120px;
 		}
-		#short-white-support
+		#short-white-top-support
 		{
 			background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
 			height: 30px;
+			margin:0;
+		}
+		#short-white-bottom-support
+		{
+			background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
+			height: 20px;
 			margin:0;
 		}
 		.panel
@@ -54,22 +60,54 @@
 			background: url("https://www.toptal.com/designers/subtlepatterns/patterns/groovepaper.png");
 			color: #333;
 			margin: 0 auto;
-			padding: 15px;
+			padding: 0px;
 			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 20px;
 		}
 		#right
 		{
 		  	text-shadow: 0 1px 0 #333;
 		  	margin: 0 auto;
-		  	padding: 15px;
+		  	padding: 0px;
 		  	padding-left: 30px;
+		  	padding-right: 30px;
+		  	padding-bottom: 20px;
 		  	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
+		}
+		#title-col {
+			margin: 0px;
+			padding: 0px;
+		}
+		#title-pitch-row
+		{
+			background: #607D8B;
+			box-shadow: 0px 0 0 #fff;	
 		}
 		#title
 		{
 			background: #607D8B;
 			box-shadow: 0px 0 0 #fff;
 			height: 80px;
+			text-align: center;
+			padding: 0px;
+		}
+		#pitch
+		{
+			background: #607D8B;
+			box-shadow: 0px 0 0 #fff;
+			text-align: center;
+			color: 	white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		#pitch p
+		{
+			line-height: 18px;
+			font-style: italic;
+			font-weight: 100;
+			font-size: 14px;
+			margin: 0px
 		}
 		#page h1
 		{
@@ -104,6 +142,9 @@
 			font-family: 'Raleway', sans-serif;
 			overflow: hidden;
 			white-space: nowrap;
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 5px;
 		}
 		h2
 		{
@@ -175,11 +216,33 @@
 			margin-left: 0px;
 			background: url("https://www.toptal.com/designers/subtlepatterns/patterns/ep_naturalblack.png");
 		}
+		#circular-square {
+			display: block;
+	    	margin: auto;
+			height: 100%;
+  			border-radius: 50%;
+  			padding: 10px;
+		}
 	</style>
 </head>
 <body>
 	<div id='page'>
 		<div class='panel'>
+			<div class='row'>
+				<div id='short-white' class='col-lg-2'>
+					<img id="circular-square" src="head-shot.png" />
+				</div>
+				<div id='title-col' class='col-lg-10'>
+					<div id='title-pitch-row' class='row'>
+						<div id='title' class='col-lg-5' >
+							<h1>Daniel Hull</h1>
+						</div>
+						<div id='pitch' class='col-lg-7' >
+							<p>A creative thinker as a self published authero, podcast producer, and manager of a successful sutfio in the heart of seattle. a leader as a.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class='row'>
 				<div id='left' class='col-lg-8'>
 					<div id='experience' class='section'>
@@ -320,17 +383,7 @@
 					</div>
 				</div>
 			</div>
-			<div class='row'>
-				<div id='short-white' class='col-lg-3'>
-				</div>
-				<div id='title' class='col-lg-9'>
-					<h1>Daniel Hull</h1>
-				</div>
-			</div>
-			<div class='row'>
-				<div id='short-white-support' class='col-lg-8'>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </body>
